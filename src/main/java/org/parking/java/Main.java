@@ -14,9 +14,11 @@ public class Main {
         //2. nombre del objeto
         //3. asignacion y new
         //4. constructor del objeto
-        Vehiculo carrito1 = new Vehiculo("ASD 789", TipoVehiculo.PARTICULAR);
+        Vehiculo carrito1 = new Vehiculo("ASD 789", 
+                                TipoVehiculo.PARTICULAR);
 
-        Vehiculo carrito2 = new Vehiculo("FGH 123",TipoVehiculo.MOTO);
+        Vehiculo carrito2 = new Vehiculo("FGH 123",
+                                TipoVehiculo.MOTO);
 
 
         //crear(instanciar un cliente)
