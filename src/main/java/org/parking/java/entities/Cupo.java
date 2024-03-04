@@ -2,7 +2,7 @@ package org.parking.java.entities;
 
 public class Cupo {
 
-    public char nombre;
+    private char nombre;
 
     //constructor 
     public Cupo() {
@@ -13,6 +13,14 @@ public class Cupo {
         this.nombre = nombre;
     }
 
+    public char getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(char nombre) {
+        this.nombre = nombre;
+    }
+    
+    
     
 }

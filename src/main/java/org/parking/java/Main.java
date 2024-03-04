@@ -27,8 +27,10 @@ public class Main {
 
         Vehiculo carrito2 = new Vehiculo("FGH 123",
                                 TipoVehiculo.MOTO);
-
-
+        
+        Vehiculo terreneitor = new Vehiculo();
+        terreneitor.setPlaca(null);
+        terreneitor.setTipoVehiculo(null);
         //crear(instanciar un cliente)
       
      
@@ -89,7 +91,7 @@ public class Main {
         Pago pago2 = new Pago(fechaHoraInicio,
                               fechaHoraFin, 
                                5000.0, 
-                               cliente1.misVehiculos.get(0), 
+                               cliente1.getMisVehiculos().get(0), 
                                cupito2, 
                                empleado1);
 
@@ -108,14 +110,14 @@ public class Main {
                 // - fecha y hora de inicio
                 // - fecha y hora de fin
                 // - cupo
-                System.out.println("|" + "pago:" + "placa:" + p.vehiculo.placa + "|");
-                System.out.println("|valor:" + p.valor + "|");
-                System.out.println("|fecha y hora entrada : " + 
-                                        p.fechaHoraInicio.toString() + "|" );
-                System.out.println("|fecha y hora de fin : " + 
-                                        p.fechaHoraFin.toString() + "|");
-                System.out.println("|cupo : " + p.cupo.nombre + "|");
-                System.out.println("|empleado:" + p.empleado.nombre + "," + p.empleado.apellido + "," + p.empleado.codigo + "|");
+                System.out.println("|" + "pago:" + "placa:" + p.getVehiculo().getPlaca() + "|" +
+                                "|valor:" + p.getValor() + "|" +
+                                "|fecha y hora entrada : " +
+                                         p.getFechaHoraInicio().toString() + "|" +
+                                    "|fecha y hora de fin : " + 
+                                        p.getFechaHoraFin().toString() + "|" +
+                                    "|cupo : " + p.getCupo().getNombre() + "|" +
+                                    "|empleado:" + p.getEmpleado().getClass() + "," + p.empleado.apellido + "," + p.empleado.codigo + "|");
         }
     }
 
